@@ -1,0 +1,22 @@
+# Archivos de compilación
+bin/
+obj/
+
+# Configuración de usuario
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Archivos temporales
+*.tmp
+*.log
+*.vspscc
+*.vssscc
+
+# Carpetas de Visual Studio
+.vs/
+
+# Paquetes NuGet
+*.nupkg
+packages/
