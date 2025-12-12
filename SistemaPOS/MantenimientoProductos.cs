@@ -67,12 +67,18 @@ namespace SistemaPOS
 
         private void button3_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(textId_Producto.Text.Trim()) == false && string.IsNullOrEmpty(textDescripcion.Text.Trim()) == false && string.IsNullOrEmpty(textPrecio.Text.Trim())) 
+            if (string.IsNullOrEmpty(textId_Producto.Text.Trim()) == false && string.IsNullOrEmpty(textDescripcion.Text.Trim()) == false && string.IsNullOrEmpty(textPrecio.Text.Trim()) == false) 
             {
                 textId_Producto.Text = "";
                 textDescripcion.Text = "";
                 textPrecio.Text = "";
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ConsultarProductos ConsulPro = new ConsultarProductos();
+            ConsulPro.Show();
         }
     }
 }

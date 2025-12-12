@@ -43,7 +43,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(116, 469);
+            this.button1.Location = new System.Drawing.Point(127, 469);
+            this.button1.Size = new System.Drawing.Size(120, 58);
+            this.button1.Text = "Consultar clientes";
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 

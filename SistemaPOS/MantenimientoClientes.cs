@@ -62,12 +62,18 @@ namespace SistemaPOS
 
         private void button3_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(textId_Cliente.Text.Trim()) == false && string.IsNullOrEmpty(textNombre_Cliente.Text.Trim()) == false && string.IsNullOrEmpty(textApellido_Cliente.Text.Trim()))
+            if (string.IsNullOrEmpty(textId_Cliente.Text.Trim()) == false && string.IsNullOrEmpty(textNombre_Cliente.Text.Trim()) == false && string.IsNullOrEmpty(textApellido_Cliente.Text.Trim()) == false)
             {
                 textId_Cliente.Text = "";
                 textNombre_Cliente.Text = "";
                 textApellido_Cliente.Text = "";
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ConsultarCliente ConsulClient = new ConsultarCliente();
+            ConsulClient.Show();
         }
     }
 }
